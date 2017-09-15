@@ -6,10 +6,12 @@ by Peter "Emanáku" Kursawe
 August 2017
 
 ## Short Description 
-Gives a (crude) possibility to reorder pages (also called section units) in CoursePress Pro without copy&paste of 
+Gives a (crude) possibility to reorder pages (also called section units) in CoursePress Pro (by WPMU DEV) without copy&paste of 
 modules.
 
 WARNING: This is tentative software! USE IT AT YOUR OWN RISK!
+
+If you do not use CoursePress Pro by WPMU DEV, then this plugin is of no use for you and will not work.
 
 ## Quick Instructions
 
@@ -34,15 +36,15 @@ Screenshots see here: https://premium.wpmudev.org/forums/topic/coursepress-plugi
 
 **CAVEATS:**
 
-1. You **need** WPMU DEVs CoursePress Pro 2.0 or higher version - otherwise your database 
+1. You **need** WPMU DEVs CoursePress Pro 2.0 (testet up to 2.1.0.1) - otherwise your database 
   very likely will be messed up.
 
 2. You **should NOT** reorder pages of courses that have been worked on by students. Their 
    history will get messed up by reordering pages!
 
-3. **Before** reordering pages you have to save your units, otherwise changes are lost
+3. **Before** reordering pages you have to save your units, otherwise your changes are lost
 
-4. If the development team of CoursePress Pro changes the data structure of courses, 
+4. If in a future release the development team of CoursePress Pro changes the data structure of courses, 
    units, pages and modules in the database, then this plugin will no longer work.
 
 5. This plugin works in two phases:   
@@ -84,13 +86,9 @@ Since at least 2014 more and more users of CoursePress want the possibility of r
 pages in a course unit, because otherwise (each single details of) the modules have to be copied by hand.
 More about this feature request here: https://premium.wpmudev.org/forums/topic/coursepress-feature-request-reorder-pages-within-units
 
-
-I heard there has been a version of CoursePress offering the reordering, but the function got switched 
-off because of some problems. I never run into that version ;-)
-
 When I started to look into this problem I realized quickly, that I should not attack it 
 on the level of the UI (and the JavaScript data structures) - because, if this would be easily possible, the development 
-team would have been successful with their former approach already.
+team would have been successful with this already.
 
 So I decided, I want to work only on the database level. After doing some reverse engineering, 
 it turned out, that the data structure of courses / units / pages and modules was kind of messed 
