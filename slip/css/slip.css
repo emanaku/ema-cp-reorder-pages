@@ -1,0 +1,62 @@
+/* SLIP special CSS */
+.slip-reordering {
+    box-shadow: 0 2px 10px rgba(0,0,0,0.45);
+}
+
+.slip-swiping-container {
+    overflow-x: hidden;
+}
+
+.slippylist li {
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    cursor: move;
+}
+
+/* the rest for the beauty */
+
+.slippylist {
+    clear:left;
+    margin: 1em;
+    padding: 0 0 1px;
+}
+
+.slippylist li {
+    display: block;
+    position: relative;
+    border: 1px solid black;
+    background: white;
+    margin: 0; padding: 0 1em;
+    border-radius: 3px;
+    margin-bottom:3px;
+    max-width: 100%;
+    line-height: 3;
+    vertical-align: middle;
+    user-select: none;
+}
+
+.slippylist input {
+    vertical-align: middle;
+}
+
+.slippylist .instant::after {
+    content: " \2261";
+}
+.slippylist .instant {
+    float: right;
+}
+
+.skewed {
+    transform: rotate(2deg) scale(0.99);
+    -webkit-transform: rotate(2deg) scale(0.99);
+}
+
+.demo-no-swipe.demo-no-reorder {
+    opacity: 0.5;
+}
+
+#scroll {
+    overflow-y: scroll;
+    max-height: 300px;
+}
